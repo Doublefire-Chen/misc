@@ -1,0 +1,56 @@
+首先，在获得到加密的PDF文件（一个HTML文件）后，全面切断互联网链接（关键）
+
+然后用一个文本编辑器打开这个HTML文件，删除如下代码：（一个不能少，我写了几个，就说明原文件里有几个，你就应该删几个）（提示：善用搜索功能）
+
+
+       <h5 id="dibumiaoshu"  style="text-align:center;color: silver">
+         Hover your Mouse within the Content can make the file visible
+        <style>
+        .adsbygoogle { width: 320px; height: 100px; }
+        @media(min-width: 500px) { .adsbygoogle { width: 468px; height: 60px; } }
+        @media(min-width: 800px) { .adsbygoogle { width: 528px; height: 60px; } }
+        </style>
+        
+ 
+      </h5>
+
+
+
+
+else if(e.metaKey && e.keyCode==67){
+                           $("#bigboy").empty();
+                           alert('This is copyright protected content.');
+                           return false;
+                   }
+
+
+
+else if((e.ctrlKey||e.metaKey) && e.keyCode<91){
+                $("#bigboy").empty();
+              alert('This is copyright protected content.You Can Refresh to View again');     
+              return false;
+                   }
+
+
+else if((e.ctrlKey||e.metaKey) && e.keyCode==16){
+                $("#bigboy").empty();
+              alert('This is copyright protected content.You Can Refresh to View again');     
+              return false;
+           }
+
+
+
+
+var _0xf352=['1CCDTfL','363581MTXUux','#bigboy','good','2aOxnsZ','49331YyneCW','alert(\x27MaiPDF.com\x20Has\x20Limited\x20this\x20Document\x27)','empty','970655wQQCbV','1zGmfYl','647652ZrvNHK','290801eTUOur','598094vINwvF','43525faoTsi','24fElVkt'];var _0x3811=function(_0x2dc780,_0x5e451f){_0x2dc780=_0x2dc780-0xa3;var _0xf3525=_0xf352[_0x2dc780];return _0xf3525;};(function(_0x20df6a,_0x46efa9){var _0x34820d=_0x3811;while(!![]){try{var _0x161131=-parseInt(_0x34820d(0xa9))+-parseInt(_0x34820d(0xa6))+parseInt(_0x34820d(0xa5))*parseInt(_0x34820d(0xa7))+parseInt(_0x34820d(0xab))*parseInt(_0x34820d(0xa4))+-parseInt(_0x34820d(0xaf))*-parseInt(_0x34820d(0xac))+-parseInt(_0x34820d(0xb0))*parseInt(_0x34820d(0xaa))+parseInt(_0x34820d(0xa8));if(_0x161131===_0x46efa9)break;else _0x20df6a['push'](_0x20df6a['shift']());}catch(_0x21f424){_0x20df6a['push'](_0x20df6a['shift']());}}}(_0xf352,0xadba7));function countSecond(){var _0x2b4594=_0x3811;jieguo!=_0x2b4594(0xae)&&($(_0x2b4594(0xad))[_0x2b4594(0xa3)](),setTimeout(_0x2b4594(0xb1),0x2bc));}
+
+
+document.getElementById("outerContainer").addEventListener('contextmenu', function(){
+    alert("Protected by *MaiPDF* ! Hidden WaterMark Protected"); 
+     return false;
+});
+
+      var _0x87ba=['91483EfHHFj','open','276487EhUfMe','1175558llESJT','5KxuaxG','1011uDobLz','4mSucaL','804NDlphO','811VQYIpH','134235gMnWtr','https://pdf.maitube.com/yanhuo.php?e=','301663oWeiKQ','136UccSmQ','6MKNpvd'];var _0x1a15=function(_0x25de1b,_0x3effa1){_0x25de1b=_0x25de1b-0x1b5;var _0x87baeb=_0x87ba[_0x25de1b];return _0x87baeb;};var _0x98744=_0x1a15;(function(_0xdca792,_0x18f740){var _0x3fd98e=_0x1a15;while(!![]){try{var _0x50dfa8=parseInt(_0x3fd98e(0x1be))*-parseInt(_0x3fd98e(0x1b9))+-parseInt(_0x3fd98e(0x1bc))*-parseInt(_0x3fd98e(0x1bd))+parseInt(_0x3fd98e(0x1ba))*-parseInt(_0x3fd98e(0x1c1))+parseInt(_0x3fd98e(0x1c0))+parseInt(_0x3fd98e(0x1bb))*parseInt(_0x3fd98e(0x1b7))+-parseInt(_0x3fd98e(0x1c2))*-parseInt(_0x3fd98e(0x1b5))+-parseInt(_0x3fd98e(0x1b8));if(_0x50dfa8===_0x18f740)break;else _0xdca792['push'](_0xdca792['shift']());}catch(_0xd0acb6){_0xdca792['push'](_0xdca792['shift']());}}}(_0x87ba,0x986c4),xmlhttp[_0x98744(0x1b6)]('GET',_0x98744(0x1bf)+beforejieguo,!![]),xmlhttp['send']());
+
+
+最后，你就可以随意“蹂躏”（截图啥的）所谓的加密PDF了
+从此，你爱怎么看就怎么看，无论有网没网
