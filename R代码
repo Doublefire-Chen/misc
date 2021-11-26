@@ -1,0 +1,139 @@
+
+
+F=rbinom(1000,1,0.4)
+J0=rbinom(1000,1,0.2)
+J1=rbinom(1000,1,0.1)
+sum=0
+for(k in 1:1000)
+{
+	if(F[k]==0)
+	{sum=sum+abs(J0[k]-1)}
+	else
+	{sum=sum+F[k]*J1[k]}
+}
+sum/1000
+
+
+sum=0
+for(n in 1:10000)
+{
+x=1:5
+m=sample(x=x,size=3)
+temp=0
+for(k in 1:3)
+{    
+	if(m[k]==1)
+	{temp=temp+1}
+	if(m[k]==2)
+	{temp=temp+1}
+}
+if(temp==1)
+sum=sum+1
+}
+sum/10000
+
+m=175;
+repeat{
+	k=pnorm(m,175,6);
+	if(k>0.99){break};
+	m=m+1;
+}
+m;
+
+
+P1=pbinom(6,300,0.01);
+P2=(pbinom(1,30,0.01))^10;
+if(P1>P2){print("plan 1 is better")
+}else{
+print("plan 2 is better")}
+
+
+P1=pnorm(70,50,10);
+P2=pnorm(70,60,4);
+if(P1>P2){
+	print("path 1 is better")
+}else{
+	print("path 2 is better")
+}
+
+
+sum(dbinom(5:9,9,0.5))
+
+
+pnorm(60,76,8,lower.tail=FALSE)
+
+
+x=runif(1000,1,60);
+y=runif(1000,1,60);
+sum=0;
+for(k in 1:1000){if(abs(x[k]-y[k])<20){sum=sum+1;}}
+sum/1000;
+或者
+x=runif(1000,1,60);
+y=runif(1000,1,60);
+sum(abs(x-y)<20)/1000;
+
+
+x=runif(50);
+for(k in 1:50){
+print(as.numeric(x[k]<0.5))}
+
+x=rbinom(20,1,0.5);
+sum(x);
+
+x=rbinom(20000,1,0.5)
+sum(x)/20000
+
+
+x=rbinom(100,20,0.5)
+boxplot(x)
+
+
+for(k in 1:1000)
+{y[k]=sum(runif(1000)<0.5)}
+boxplot(y)
+
+
+x=matrix(0,100,100)
+m=0;
+v=0;
+for(k in 1:100)
+{
+	x[,k]=rnorm(100,2,200);
+	m[k]=mean(x[,k])-2;
+	v[k]=var(x[,k])-40000;
+}
+dev.new();
+boxplot(m);
+dev.new();
+boxplot(v);
+
+
+
+odd_alkane=c(-182.6,-187.1,-129.3,-90.5,-53.7,-25.6,-6,10,22.0,32.0)
+even_alkane=c(-172.0,-135.0,-94.0,-56.8,-29.7,-9.6,5.5,18.1,28.0,36.4)
+odd=c(1,3,5,7,9,11,13,15,17,19)
+even=c(2,4,6,8,10,12,14,16,18,20)
+plot(odd,odd_alkane,xlab="carbon_number",ylab="melting_point",xlim=c(1,20))
+axis(1,at=seq(0,20,1))
+points(even,even_alkane)
+abline(lm(odd_alkane~odd),col="blue")
+abline(lm(even_alkane~even),col="red")
+text(8,-45,"even_slope=11.47")
+text(10.5,-85,"odd_slope=13.25")
+
+
+pdf(file="/Users/chenyan/Downloads/shuju.pdf") # 打开图形设备路径
+Cl=c(10^-2,5*10^-3,10^-3,5*10^-4,10^-4) # 输入氯离子浓度
+E=c(110.7,124,162.2,172.4,205.3) # 输入电压
+pCl=-log(Cl,10) # 转化为氯离子浓度的负对数
+pCl3=round(pCl,3) # 限定pCl精度为小数点后三位
+plot(E,pCl,xlab="E",ylab="pCl") # 绘制点状图
+abline(lm(pCl3~E)) # 绘制线性回归函数
+title(main="pCl-E linear regression") # 设置图形标题
+lm(pCl3~E) # 显示拟合直线参数
+text(140,3.2,"pCl=0.02091E-0.31968") # 将直线方程式标在图上
+dev.off() # 关闭图形设备
+
+add=function(a,b){c=a+b;return(c)}
+add(1,3)

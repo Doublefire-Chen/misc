@@ -1,0 +1,34 @@
+---
+title: "电化学2————药学1班————陈炎"
+documentclass: ctexart
+geometry: "left=2cm,right=2cm,top=1cm,bottom=2cm"
+output:
+  rticles::ctex:
+    fig_caption: no
+    number_sections: no
+    toc: no
+---
+作图代码
+```{r eval=FALSE}
+Cl=c(10^-2,5*10^-3,10^-3,5*10^-4,10^-4) # 输入氯离子浓度
+E=c(110.7,124,162.2,172.4,205.3) # 输入电压
+pCl=-log(Cl,10) # 转化为氯离子浓度的负对数
+pCl3=round(pCl,3) # 限定pCl精度为小数点后三位
+plot(E,pCl,xlab="E",ylab="pCl") # 绘制点状图
+abline(lm(pCl3~E)) # 绘制线性回归函数
+title(main="pCl-E linear regression") # 设置图形标题
+lm(pCl3~E) # 显示拟合直线参数
+text(140,3.2,"pCl=0.02091E-0.31968") # 将直线方程式标在图上
+```
+```{r echo=FALSE}
+Cl=c(10^-2,5*10^-3,10^-3,5*10^-4,10^-4) # 输入氯离子浓度
+E=c(110.7,124,162.2,172.4,205.3) # 输入电压
+pCl=-log(Cl,10) # 转化为氯离子浓度的负对数
+pCl3=round(pCl,3) # 限定pCl精度为小数点后三位
+plot(E,pCl,xlab="E",ylab="pCl") # 绘制点状图
+abline(lm(pCl3~E)) # 绘制线性回归函数
+title(main="pCl-E linear regression") # 设置图形标题
+text(140,3.2,"pCl=0.02091E-0.31968") # 将直线方程式标在图上
+```
+
+par(pin=c(5,2)) #可以控制图形大小
